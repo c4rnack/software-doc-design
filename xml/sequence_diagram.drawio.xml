@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.0">
+  <diagram name="Сторінка-1" id="xynZSznDNDgcDUyyH6LM">
+    <mxGraphModel dx="1895" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Client" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="1050" as="sourcePoint" />
+            <mxPoint x="50" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Hotel System" vertex="1">
+          <mxGeometry height="960" width="100" x="340" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-5" parent="FIfrh1BAkC53LdFxrsQp-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-30" parent="FIfrh1BAkC53LdFxrsQp-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Booking.com" vertex="1">
+          <mxGeometry height="960" width="100" x="160" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-7" parent="FIfrh1BAkC53LdFxrsQp-6" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="610" width="10" x="45" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="2. checkAvailibility(roomId, dates)">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="217.5" y="230" as="sourcePoint" />
+            <mxPoint x="382.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" target="FIfrh1BAkC53LdFxrsQp-7" value="&lt;div&gt;1. bookRoom(roomId,&amp;nbsp;&lt;/div&gt;&lt;div&gt;dates, guestDetails, cardData)&lt;/div&gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="50" y="190" as="sourcePoint" />
+            <mxPoint x="195" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="3. available = true">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="382.5" y="270" as="sourcePoint" />
+            <mxPoint x="217.5" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-18" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="4. createReservation(status = &quot;Pending&quot;)">
+          <mxGeometry relative="1" width="160" x="0.25" y="100" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="240" y="300" />
+              <mxPoint x="240" y="340" />
+            </Array>
+            <mxPoint x="220" y="300" as="sourcePoint" />
+            <mxPoint x="220" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-20" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;Bank&lt;/div&gt;" vertex="1">
+          <mxGeometry height="960" width="100" x="520" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-21" parent="FIfrh1BAkC53LdFxrsQp-20" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-22" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" value="5. holdFunds(cardData, amount)">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="213.0000000000001" y="400" as="sourcePoint" />
+            <mxPoint x="565.5" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-24" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="6. holdResult">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="562.5" y="440" as="sourcePoint" />
+            <mxPoint x="218" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-27" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=50;height=30;" value="&lt;div&gt;alt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="430" width="820" x="30" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-28" parent="FIfrh1BAkC53LdFxrsQp-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[holdResult==Success]" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-29" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="7. reserveRoom(roomId, dates)">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="185" y="60" as="sourcePoint" />
+            <mxPoint x="350" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-31" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="8. reservation success">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="351" y="100" as="sourcePoint" />
+            <mxPoint x="186" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-35" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="10. sendConfirmation(email, reservationDetails)">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="185" y="180" as="sourcePoint" />
+            <mxPoint x="694.5" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-36" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="9. updateStatus(&quot;Confirmed&quot;)">
+          <mxGeometry relative="1" width="160" y="74" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="206" y="120" />
+              <mxPoint x="206" y="160" />
+            </Array>
+            <mxPoint x="186" y="120" as="sourcePoint" />
+            <mxPoint x="186" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-38" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" source="FIfrh1BAkC53LdFxrsQp-34" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" value="11. Email: &quot;Your booking is confirmed&quot;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="689.5" y="210" as="sourcePoint" />
+            <mxPoint x="20" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-42" parent="FIfrh1BAkC53LdFxrsQp-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[holdResult==Failure]" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-46" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="10. sendPaymentError(email)">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="186" y="340" as="sourcePoint" />
+            <mxPoint x="695.5" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-47" edge="1" parent="FIfrh1BAkC53LdFxrsQp-27" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" value="11. Email: &quot;Payment Error&quot;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="695" y="380" as="sourcePoint" />
+            <mxPoint x="20" y="381" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-33" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Email Service" vertex="1">
+          <mxGeometry height="960" width="100" x="680" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-34" parent="FIfrh1BAkC53LdFxrsQp-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-45" parent="FIfrh1BAkC53LdFxrsQp-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#808080;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="FIfrh1BAkC53LdFxrsQp-44" edge="1" parent="1" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" value="9. updateStatus(&quot;Cancelled&quot;)">
+          <mxGeometry relative="1" width="160" y="74" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="237" y="743" />
+              <mxPoint x="237" y="783" />
+            </Array>
+            <mxPoint x="217" y="743" as="sourcePoint" />
+            <mxPoint x="217" y="783" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NsAvz10f-raIvwWUEKZL-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.999;entryY=0.607;entryDx=0;entryDy=0;entryPerimeter=0;" target="FIfrh1BAkC53LdFxrsQp-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="29" y="720" as="sourcePoint" />
+            <mxPoint x="854" y="724" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
