@@ -75,7 +75,7 @@ class SqlAlchemyRepository(IRepository):
         return review
     
     def get_or_create_reservation(self, check_in_date, check_out_date, status, room):
-        reservation = self.session.query(Reservation).filter_by(checkInDate=check_in_date, checkOutDate=check_out_date, roomId=room.roomId)
+        reservation = self.session.query(Reservation).filter_by(checkInDate=check_in_date, checkOutDate=check_out_date, roomId=room.roomId).first()
         if reservation:
             return reservation
         
