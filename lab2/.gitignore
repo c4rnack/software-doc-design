@@ -1,0 +1,7 @@
+.env
+business/__pycache__/
+data_access/__pycache__/
+generator/__pycache__/
+
+business/interfaces/__pycache__/
+data_access/interfaces/__pycache__/
