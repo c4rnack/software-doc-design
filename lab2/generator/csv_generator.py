@@ -11,9 +11,10 @@ class CsvGenerator:
     ROOM_TYPES = ["Single", "Double", "Suite"]
     STATUSES = ["pending", "confirmed", "checked-in", "checked-out"]
 
-    def __init__(self, path="hotels.csv", rows=1000):
+    def __init__(self, path="hotels.csv", rows=1000, delimiter=","):
         self.path = path
         self.rows = rows
+        self.delimiter = delimiter
 
     def _random_date(self):
         start = datetime(2024, 1, 1)
@@ -21,7 +22,7 @@ class CsvGenerator:
 
     def generate(self):
         with open(self.path, "w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
+            writer = csv.writer(f, delimiter=self.delimiter)
 
             writer.writerow([
                 "chain_name",
@@ -76,6 +77,6 @@ class CsvGenerator:
 
 
 if __name__ == "__main__":
-    generator = CsvGenerator(rows=1000)
+    generator = CsvGenerator(rows=1000, delimiter=";")
     generator.generate()
     print("CSV file generated successfully")
