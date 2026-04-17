@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h3>Редагування готелю #{{ hotel.hotelId }}</h3>
+    
+    <form action="/hotels/{{ hotel.hotelId }}/edit" method="post">
+        <label>Назва готелю:</label>
+        <input type="text" name="name" value="{{ hotel.name }}" required>
+        
+        <label>Опис:</label>
+        <input type="text" name="description" value="{{ hotel.description if hotel.description else '' }}">
+        
+        <label>Email:</label>
+        <input type="text" name="contactEmail" value="{{ hotel.contactEmail if hotel.contactEmail else '' }}">
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+        <p style="margin-top: 0; font-weight: bold; color: var(--primary-blue);">Адреса:</p>
+        
+        <div style="display: flex; gap: 10px;">
+            <div style="flex: 1;">
+                <label>Країна:</label>
+                <input type="text" name="country" value="{{ hotel.location.country if hotel.location else 'Ukraine' }}" required>
+            </div>
+            <div style="flex: 1;">
+                <label>Місто:</label>
+                <input type="text" name="city" value="{{ hotel.location.city if hotel.location else '' }}" required>
+            </div>
+        </div>
+        
+        <div style="display: flex; gap: 10px;">
+            <div style="flex: 2;">
+                <label>Вулиця:</label>
+                <input type="text" name="street" value="{{ hotel.location.street if hotel.location else '' }}" required>
+            </div>
+            <div style="flex: 1;">
+                <label>Будинок:</label>
+                <input type="text" name="number" value="{{ hotel.location.number if hotel.location else '' }}" required>
+            </div>
+        </div>
+        
+        <div class="actions" style="margin-top: 20px;">
+            <button type="submit" class="btn-success">Зберегти зміни</button>
+            <a href="/hotels/" class="btn btn-secondary">Скасувати</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
