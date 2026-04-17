@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h3>Додати новий готель</h3>
+    <form action="/hotels/add" method="post">
+        <label>Назва готелю:</label>
+        <input type="text" name="name" required>
+        
+        <label>Опис:</label>
+        <input type="text" name="description">
+        
+        <label>Email:</label>
+        <input type="text" name="contactEmail">
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+        <p style="margin-top: 0; font-weight: bold; color: var(--primary-blue);">Адреса:</p>
+        
+        <div style="display: flex; gap: 10px;">
+            <div style="flex: 1;">
+                <label>Країна:</label>
+                <input type="text" name="country" value="Ukraine" required>
+            </div>
+            <div style="flex: 1;">
+                <label>Місто:</label>
+                <input type="text" name="city" required>
+            </div>
+        </div>
+        
+        <div style="display: flex; gap: 10px;">
+            <div style="flex: 2;">
+                <label>Вулиця:</label>
+                <input type="text" name="street" required>
+            </div>
+            <div style="flex: 1;">
+                <label>Будинок:</label>
+                <input type="text" name="number" required>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Додати готель</button>
+    </form>
+</div>
+
+<h2>Список готелів</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Назва</th>
+        <th>Місто (Локація)</th>
+        <th>Контактний Email</th>
+        <th style="width: 200px;">Дії</th>
+    </tr>
+    {% for hotel in hotels %}
+    <tr>
+        <td>{{ hotel.hotelId }}</td>
+        <td><strong>{{ hotel.name }}</strong></td>
+        <td>{{ hotel.location.city if hotel.location else 'Не вказано' }}</td>
+        <td><a href="mailto:{{ hotel.contactEmail }}">{{ hotel.contactEmail }}</a></td>
+        <td>
+            <div class="actions">
+                <form action="/hotels/{{ hotel.hotelId }}/edit" method="get">
+                    <button type="submit" class="btn">Редагувати</button>
+                </form>
+                <form action="/hotels/{{ hotel.hotelId }}/delete" method="post" onsubmit="return confirm('Ви впевнені, що хочете видалити цей готель?');">
+                    <button type="submit" class="btn-danger">Видалити</button>
+                </form>
+            </div>
+        </td>
+    </tr>
+    {% else %}
+    <tr>
+        <td colspan="5">Готелів ще немає в базі даних.</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
