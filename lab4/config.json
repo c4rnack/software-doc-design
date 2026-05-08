@@ -1,0 +1,13 @@
+{
+  "active_strategy": "redis",
+  "dataset_path": "data/hotels.csv",
+  "redis": {
+    "host": "smashing-leopard-118902.upstash.io",
+    "port": 6379,
+    "password": "gQAAAAAAAdB2AAIgcDI1OWNiNWY5NzJjODI0ZmNiOTViNGFiYTMxOTQ1NjUxNQ"
+  },
+  "kafka": {
+    "bootstrap_servers": "localhost:9092",
+    "topic": "hotel-bookings"
+  }
+}
